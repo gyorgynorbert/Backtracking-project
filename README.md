@@ -15,16 +15,16 @@ ofstream ki("megoldas.txt");
 
 class Reszhalmaz{
 public:
-    void kiir(int eredmeny[], int helyzet, int meret)
-    {
-        ki << "[";
-        for (int i = 0; i < meret; ++i)
-        {
-            if (eredmeny[i] != INT_MAX)
-                ki << " " << eredmeny[i] << " ";
-        }
-        ki << "]\n";
-    }
+	void kiir(int eredmeny[], int helyzet, int meret)
+	{
+		ki << "[";
+		for (int i = 0; i < meret; ++i)
+		{
+		    if (eredmeny[i] != INT_MAX)
+			ki << " " << eredmeny[i] << " ";
+		}
+		ki << "]\n";
+	}
 
 	void reszhalmaz_kereses(int halmaz[], int eredmeny[], int osszeg, int meret, int seged, int helyzet)
 	{
